@@ -7,9 +7,18 @@ import { Component, OnInit } from '@angular/core';
 })
 export class SpahomeComponent implements OnInit {
 
-  constructor() { }
+  count = 0;
 
-  ngOnInit(): void {
+  constructor() {
+
   }
 
+  ngOnInit() {
+    let interval = setInterval(() => { 
+      this.count++;
+      if (this.count === 20) {
+        clearInterval(interval);
+      }
+    }, 1000)
+  }
 }
