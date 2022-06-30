@@ -93,11 +93,11 @@ ng g c home(nome do componente)
 
 4 - Crie em uma das páginas uma interação através da interpolação e/ou utilizando Property Binding:
 
- A interpolação {{title}} foi criada no arquivo: footer.component.ts
-  public title = ' ';
+ A interpolação {{ count }} foi criada no arquivo: spahome.component.ts
+ 
 
-  e utilizada no arquivo: footer.component.html
-  {{title}}
+  e utilizada no arquivo: spahome.component.html
+ <h2 class="text-center">Preencha em 20 segundos: {{ count }}</h2>
 
 
 5 - Crie uma explicação sobre o que foi feito, esta explicação será inserida na plataforma junto com o link para o código no GitHub.
